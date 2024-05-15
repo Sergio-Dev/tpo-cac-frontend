@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- favicon -->
-    <link rel="icon" href="../tpo-cac-frontend/assets/img/calendar-check-regular.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon/favicon-32x32.png" type="image/x-icon">
+
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- estilos css -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Home</title>
 </head>
@@ -23,30 +29,43 @@
         <nav class="navbar container">
             <div class="navbar_brand">
                 <a class="" href="./index.html">
-                    <h1>Logo</h1>
+                    <h1>Clínica Vital</i></h1>
                 </a>
             </div>
 
+            <!-- menu responsive -->
+            <button class="navbar_toggle ">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a class="navbar_link" href="./index.html">INICIO</a>
+                    <a class="navbar_link" href="">INICIO</a>
                 </li>
                 <li class="navbar_item">
-                    <a class="navbar_link" href="./pages/">DETALLES</a>
+                    <a class="navbar_link" href="">DETALLES</a>
                 </li>
                 <li class="navbar_item">
-                    <a class="navbar_link" href="./pages/about.html">NOSOTROS</a>
+                    <a class="navbar_link" href="">NOSOTROS</a>
                 </li>
                 <li class="navbar_item">
-                    <a class="navbar_link" href="./pages/contact.html">CONTACTO</a>
+                    <a class="navbar_link" href="">CONTACTO</a>
                 </li>
+
+                <div class="navbar_buttons_responsive">
+                    <button class="navbar_button">Registrarse</button>
+
+                    <button class="navbar_button button_login">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div>
             </ul>
 
             <div class="navbar_buttons">
                 <button class="navbar_button">Registrarse</button>
 
                 <button class="navbar_button button_login">
-                    <span class="ph--user-bold"></span>Login
+                    <i class="fa-solid fa-user"></i> Login
                 </button>
             </div>
         </nav>
@@ -57,71 +76,87 @@
         <section>
             <div class="banner container">
                 <div class="banner_texts">
-                    <h1 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
-                        perferendis.</h1>
+                    <h1 class="text-center">
+                        Agenda tu turno médico online
+                    </h1>
                     <p class="text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga expedita voluptas atque illo
-                        eligendi, consectetur molestias. Qui praesentium numquam cumque itaque aspernatur est unde ipsa
-                        suscipit corrupti deserunt dolorem, quo, ipsam, autem voluptatum culpa distinctio vitae!
+                        Reservá tus consultas médicas de forma ágil y sin complicaciones. En nuestra clínica, combinamos
+                        atención médica de excelencia con un sistema de turnos online, para que puedas acceder a la
+                        atención que necesitás de manera rápida y sencilla.
                     </p>
 
                     <div class="features">
-                        <span class="feature">característica 1</span>
-                        <span class="feature">característica 2</span>
-                        <span class="feature">característica 3</span>
+                        <span class="feature"><i class="fa-solid fa-stethoscope"></i>Selecciona tu especialidad</span>
+                        <span class="feature"><i class="fa-solid fa-calendar-days"></i>Elige el médico y horario</span>
+                        <span class="feature"><i class="fa-regular fa-calendar-check"></i>Confirma tu cita</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="section-summary container ">
+            <span>
+                <i class="fa-solid fa-calendar-plus"></i>
+                <p>+20 Años de Experiencia</p>
+            </span>
+            <span>
+                <i class="fa-solid fa-users"></i>
+                <p>+5000 Pacientes Atendidos</p>
+            </span>
+            <span>
+                <i class="fa-solid fa-user-doctor"></i>
+                <p>+30 Profesionales Médicos</p>
+            </span>
+            <span>
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <p>+15 Especialidades Médicas</p>
+            </span>
+        </section>
+
         <section class="section container">
             <article class="section_texts">
-                <h2 class="section_title">Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p class="section_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum, ducimus soluta fuga eius
-                        labore
-                        ea aperiam optio qui doloremque architecto nulla quibusdam voluptates ipsam temporibus natus
-                        harum.
-                        Blanditiis, dignissimos!
-                    </p>
+                <h2 class="section_title">Descubre lo Mejor en Atención Médica</h3>
+                <p class="section_text">
+                    En nuestra clínica, te ofrecemos una atención excepcional en cada consulta. Desde la reserva de
+                    tu turno hasta la atención médica personalizada, nuestro sistema de turnos en línea garantiza
+                    que accedas a la atención que necesitas de manera rápida y sencilla.
+                </p>
             </article>
 
             <picture class="section_image">
-                <img src="./assets/img/banner.jpg" alt="">
+                <img src="./assets/img/sec-1.jpg" alt="">
             </picture>
         </section>
 
         <section class="section container">
             <picture class="section_image">
-                <img src="./assets/img/banner.jpg" alt="">
+                <img src="./assets/img/sec-2.png" alt="">
             </picture>
 
             <article class="section_texts">
-                <h2 class="section_title">Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p class="section_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum, ducimus soluta fuga eius
-                        labore
-                        ea aperiam optio qui doloremque architecto nulla quibusdam voluptates ipsam temporibus natus
-                        harum.
-                        Blanditiis, dignissimos!
-                    </p>
+                <h2 class="section_title">Descubre Nuestras Áreas de Especialización</h3>
+                <p class="section_text">
+                    Ofrecemos un conjunto completo de servicios especializados para atender tus necesidades de salud
+                    más específicas.
+                    Explora nuestras áreas de especialización a continuación y descubre cómo podemos ayudarte a
+                    alcanzar una salud óptima y bienestar integral.
+                </p>
             </article>
         </section>
 
         <section class="section container">
             <article class="section_texts">
-                <h2 class="section_title">Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p class="section_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum, ducimus soluta fuga eius
-                        labore
-                        ea aperiam optio qui doloremque architecto nulla quibusdam voluptates ipsam temporibus natus
-                        harum.
-                        Blanditiis, dignissimos!
-                    </p>
+                <h2 class="section_title">Conoce a Nuestro Equipo Médico</h3>
+                <p class="section_text">
+                    Nuestro equipo está formado por médicos altamente capacitados y especializados, comprometidos
+                    con tu bienestar y cuidado.
+                    Desde médicos generales hasta especialistas en diversas áreas, cada miembro de nuestro equipo
+                    está dedicado a brindarte la mejor atención posible.
+                </p>
             </article>
 
             <picture class="section_image">
-                <img src="./assets/img/banner.jpg" alt="">
+                <img src="./assets/img/sec-3.jpg" alt="">
             </picture>
         </section>
     </main>
@@ -130,8 +165,14 @@
     <footer class="footer">
         <div class="footer_content">
 
-            <div class="">
-                <p>Mapa del sitio</p>
+            <picture class="footer_logo">
+                <img src="./assets/img/logo_footer/favicon_io (2)/android-chrome-192x192.png" alt="">
+
+                <p>Clínica Vital</p>
+            </picture>
+
+            <div class="footer_map">
+                <h3>Mapa del sitio</h3>
                 <ul class="footer_items">
                     <li class="footer_item"><a class="footer_link" href="">Inicio</a></li>
                     <li class="footer_item"><a class="footer_link" href="">Detalles</a></li>
@@ -140,23 +181,35 @@
                 </ul>
             </div>
 
-            <picture class="footer_logo">
-                <img src="./assets/img/banner-2-remove.png" alt="">
-            </picture>
-
-            <div class="">
-                <p>Redes sociales</p>
+            <div class="footer_contact">
+                <h3>Contacto</h3>
                 <ul class="footer_items">
-                    <li class="footer_item"><a class="footer_link" href="">Inicio</a></li>
-                    <li class="footer_item"><a class="footer_link" href="">Detalles</a></li>
-                    <li class="footer_item"><a class="footer_link" href="">Nosotros</a></li>
-                    <li class="footer_item"><a class="footer_link" href="">Contacto</a></li>
+                    <li class="footer_item">
+
+                        <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
+
+                    </li>
+                    <li class="footer_item">
+
+                        <i class="fa-solid fa-phone"></i> (05326) 433056
+
+                    </li>
+                    <li class="footer_item">
+
+                        <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
+
+                    </li>
+                    <li class="footer_item">
+
+                        <i class="fa-solid fa-envelope"></i> info@clinicavital.com.ar
+
+                    </li>
                 </ul>
             </div>
 
         </div>
 
-        <p class="footer_copy text-center">Todos los derechos reservados. &copy; 2024</p>
+        <p class="footer_copy text-center">Copyright © 2024 Clínica Vital. All rights reserved.</p>
     </footer>
 
     <script src="./assets/js/main.js"></script>
