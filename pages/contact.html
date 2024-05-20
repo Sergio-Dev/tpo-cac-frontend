@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="icon" href="../assets/img/calendar-check-regular.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/style contact.css">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,6 @@
                     <h1>Logo</h1>
                 </a>
             </div>
-
             <ul class="navbar_menu">
                 <li class="navbar_item">
                     <a class="navbar_link" href="../index.html">INICIO</a>
@@ -50,6 +49,55 @@
             </div>
         </nav>
     </header>
-    
+    <!-- contenido main -->
+    <main>
+        <section>
+            <div class="tarjeta-contacto" id="contacto">
+                <div class="intro-contacto">
+                    <div class="titulo-intro">
+                        <h1>Contactanos</h1>
+                        <p>Estamos disponibles para brindarte el <br>mejor asesoramiento online. <br>No dudes en escribirnos!</p>
+                    </div>
+                    <div class="titulo-intro">
+                        <h3>Email</h3>
+                        <p>Clinica.Vital@gmail.com</p>
+                    </div>
+                    <div class="titulo-intro">
+                        <h3>Redes</h3>
+                        <a href="">Web</a><br>
+                        <a href="">Instagram</a><br>
+                        <a href="">Facebook</a>
+                    </div>
+                </div>
+                <form class="form-contacto" action="form-contacto">
+                    <div class="msj-contacto">
+                        <div class="cont-campo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="cont-campo">
+                            <label for="nombre">Email:</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="cont-campo">
+                            <label for="nombre">Especialidad:</label>
+                            <input name="input-especialidad" size=12 placeholder="Selecciona especialidad" list="especialidades" type="text">
+                            <datalist id="especialidades">
+                                <option value="ALERGIA E INMUNOLOGIA ClINICA">ALERGIA E INMUNOLOGIA ClINICA</option>
+                                <option value="CARDIOLOGIA">CARDIOLOGIA</option>
+                                <option value="CARDIOLOGIA INFANTIL">CARDIOLOGIA INFANTIL</option>
+                                <option value="CIRUGIA GENERAL">CIRUGIA GENERAL</option>
+                            </datalist>
+                        </div>
+                        <div class="cont-msj">
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea name="Mensaje" id="Mensaje" autocomplete="on"></textarea>
+                            <button class="boton">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
