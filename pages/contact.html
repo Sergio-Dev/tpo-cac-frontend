@@ -6,6 +6,7 @@
     <!-- favicon -->
     <link rel="icon" href="../assets/img/calendar-check-regular.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,14 +60,19 @@
                         <p>Estamos disponibles para brindarte el <br>mejor asesoramiento online. <br>No dudes en escribirnos!</p>
                     </div>
                     <div class="titulo-intro">
-                        <h3>Email</h3>
-                        <p>Clinica.Vital@gmail.com</p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Clinica.Vital@gmail.com</span><br>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Tel: 4513 - 9280</span><br>
+                        <i class="fa-solid fa-location-pin"></i>
+                        <span>Av. Rivadavia 12344</span>
                     </div>
                     <div class="titulo-intro">
                         <h3>Redes</h3>
-                        <a href="">Web</a><br>
-                        <a href="">Instagram</a><br>
-                        <a href="">Facebook</a>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="Instagram">Instagram</a><br>
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="Facebook">Facebook</a>
                     </div>
                 </div>
                 <form class="form-contacto" action="form-contacto">
@@ -80,13 +86,14 @@
                             <input type="text" id="nombre">
                         </div>
                         <div class="cont-campo">
-                            <label for="nombre">Especialidad:</label>
-                            <input name="input-especialidad" size=12 placeholder="Selecciona especialidad" list="especialidades" type="text">
+                            <label for="nombre">Usted es?:</label>
+                            <input name="input-especialidad" size=10 placeholder="Usted es?" list="especialidades" type="text">
                             <datalist id="especialidades">
-                                <option value="ALERGIA E INMUNOLOGIA ClINICA">ALERGIA E INMUNOLOGIA ClINICA</option>
-                                <option value="CARDIOLOGIA">CARDIOLOGIA</option>
-                                <option value="CARDIOLOGIA INFANTIL">CARDIOLOGIA INFANTIL</option>
-                                <option value="CIRUGIA GENERAL">CIRUGIA GENERAL</option>
+                                <option value="Paciente">Paciente</option>
+                                <option value="Familiar">Familiar</option>
+                                <option value="Institucion">Institucion</option>
+                                <option value="Medios">Medios</option>
+                                <option value="Otros">Otros</option>
                             </datalist>
                         </div>
                         <div class="cont-msj">

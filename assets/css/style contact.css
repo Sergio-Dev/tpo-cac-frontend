@@ -112,8 +112,6 @@ img{
 
 ///
 
-
-
 .msj-contacto {
     width: 35w;
     padding-right: 10vw;
@@ -167,12 +165,22 @@ section {
 .intro-contacto h3 {
     font-family: "poppins";
     font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .intro-contacto p {
     font-family: "poppins";
     font-size: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.intro-contacto span {
+    font-family: "poppins";
+    font-size: 12px;
+    margin-bottom: 20px;
     margin-top: 15px;
 }
 
@@ -184,8 +192,9 @@ section {
 
 .titulo-intro a {
     font-family: "poppins";
-    font-size: small;
+    font-size: 12px;
     text-decoration: underline;
+    font-style: italic;
 }
 
 .boton {
@@ -214,7 +223,7 @@ input {
     background-color: #f7f7f7;
     color: #050218;
     font-family: "poppins";
-    font-size: small;
+    font-size: x-small;
     border-color: #f7f7f7;
 }
 
