@@ -149,6 +149,16 @@ section {
     background-color: #ffffff;
 }
 
+.tarjeta-login {
+    height: 80vh;
+    width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff;
+}
+
 .intro-contacto {
     flex-basis: 50%;
     padding-left: 10vw;
@@ -190,6 +200,11 @@ section {
     margin-bottom: 10px;
 }
 
+.titulo-intro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .titulo-intro a {
     font-family: "poppins";
     font-size: 12px;
@@ -214,6 +229,61 @@ datalist {
     border-color: #f7f7f7;
 }
 
+select {
+    width: 100%;
+    height: 28px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #f7f7f7;
+    color: #050218;
+    font-family: "poppins";
+    font-size: x-small;
+    border-color: #f7f7f7;
+}
+
+.radiobutton-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: white;
+}
+
+#radiobutton {
+    appearance: none;
+    border-radius: 50%;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #4d4c4c;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    top: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#radiobutton:checked {
+  border: 5px solid black;
+}
+
+#radiobutton:hover,
+#radiobutton:focus {
+  color: #999;
+}
+
+#radiobutton:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+fieldset {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
 input {
     width: 100%;
     height: 28px;
@@ -231,8 +301,8 @@ textarea {
     width: 100%;
     background-color: #f7f7f7;
     border-radius: 1px;
-    resize: none;
-    height: 80px;
+    height: 70px;
+    resize: vertical;
     border-color: #f7f7f7;
 }
 

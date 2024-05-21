@@ -79,22 +79,32 @@
                     <div class="msj-contacto">
                         <div class="cont-campo">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre">
+                            <input type="text" id="nombre" required>
                         </div>
                         <div class="cont-campo">
                             <label for="nombre">Email:</label>
-                            <input type="text" id="nombre">
+                            <input type="text" id="nombre" required>
                         </div>
                         <div class="cont-campo">
-                            <label for="nombre">Usted es?:</label>
-                            <input name="input-especialidad" size=10 placeholder="Usted es?" list="especialidades" type="text">
-                            <datalist id="especialidades">
-                                <option value="Paciente">Paciente</option>
-                                <option value="Familiar">Familiar</option>
-                                <option value="Institucion">Institucion</option>
-                                <option value="Medios">Medios</option>
-                                <option value="Otros">Otros</option>
-                            </datalist>
+                            <label for="nombre">Especialidad:</label>
+                            <select name="especialidades" id="especialidades">
+                                <option value="Seleccione">Seleccione especialidad</option>
+                                <option value="Especialidad">Especialidad 1</option>
+                                <option value="Especialidad">Especialidad 2</option>
+                                <option value="Especialidad">Especialidad 3</option>
+                                <option value="Especialidad">Especialidad 4</option>
+                            </select>
+                        </div>
+                        <div class="radiobutton-card">
+                            <div>
+                            <label for="paciente">Paciente <input type="radio" id="radiobutton" name="drone" value="huey" checked /></label> 
+                            </div>                           
+                            <div>
+                            <label for="Familiar">Familiar <input type="radio" id="radiobutton" name="drone" value="dewey" /></label>
+                            </div>
+                            <div>
+                            <label for="Otro">Otro <input type="radio" id="radiobutton" name="drone" value="louie" /></label>
+                            </div>
                         </div>
                         <div class="cont-msj">
                             <label for="Mensaje">Mensaje</label>
