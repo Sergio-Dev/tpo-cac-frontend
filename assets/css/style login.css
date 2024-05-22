@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100; 0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -95,13 +95,28 @@ img {
 }
 
 /// 
+
 .msj-contacto {
     width: 35w;
     padding-right: 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center
+}
+
+.tarjeta-login {
+    height: 80vh;
+    width: 1000px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff
+}
+.intro-contacto {
+    width: 50%;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column
 }
 
 .cont-campo {
@@ -121,33 +136,6 @@ section {
     justify-content: center
 }
 
-.tarjeta-contacto {
-    height: 80vh;
-    width: 1000px;
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #fff
-}
-
-.tarjeta-login {
-    height: 80vh;
-    width: 1000px;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #fff
-}
-
-.intro-contacto {
-    flex-basis: 50%;
-    padding-left: 10vw;
-    display: flex;
-    justify-content: left;
-    flex-direction: column
-}
 
 .form-contacto {
     flex-basis: 40%;
@@ -209,44 +197,6 @@ section {
     background-color: #fff
 }
 
-select {
-    width: 100%;
-    height: 28px;
-    margin-bottom: 3px;
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    background-color: #f7f7f7;
-    color: #050218;
-    font-family: poppins;
-    font-size: x-small;
-    border-color: #f7f7f7
-}
-
-.radiobutton-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: #fff
-}
-
-#radiobutton {
-    appearance: none;
-    border-radius: 50%;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #4d4c4c;
-    transition: .2s all linear;
-    margin-right: 5px;
-    top: 4px;
-    margin-left: 5px;
-    margin-right: 5px
-}
-
-#radiobutton:checked {
-    border: 5px solid #000
-}
-
 input {
     width: 100%;
     height: 28px;
@@ -257,15 +207,6 @@ input {
     color: #050218;
     font-family: poppins;
     font-size: x-small;
-    border-color: #f7f7f7
-}
-
-textarea {
-    width: 100%;
-    background-color: #f7f7f7;
-    border-radius: 1px;
-    height: 70px;
-    resize: vertical;
     border-color: #f7f7f7
 }
 
