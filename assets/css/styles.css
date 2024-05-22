@@ -17,6 +17,9 @@
     --text-color-secondary: #ffffff;
     --btn-color-primary: #050218;
     --btn-color-secondary: #050218;
+
+    --border-primary: white;
+    --border-secondary: #050218;
 }
 
 ul {
@@ -31,7 +34,6 @@ a {
 
 img{
     width: 100%;
-    height: auto;
 }
 
 .text-center{
@@ -43,6 +45,7 @@ img{
     margin: 0 auto;
 }
 
+/* ##### PAGINA INICIO #####*/
 /* header */
 .header {
     background-color: var(--bg-primary);
@@ -61,6 +64,7 @@ img{
 .navbar_brand{
     font-size: 21px;
     color: var(--text-color-primary);
+    font-weight: 800;
 }
 
 .navbar_toggle{
@@ -77,6 +81,8 @@ img{
     font-size: 14px;
     gap: 25px;
     font-weight: 500;
+    
+    flex-wrap: wrap;
 }
 
 .navbar_buttons_responsive{
@@ -112,12 +118,13 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 4.2em);
-    background-image: url("/assets/img/banner-1.jpg");
+    min-height: calc(100vh - 4.2em);background-image: url("/assets/img/banner-4.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    border-bottom: 1px solid var(--btn-color-primary);
+    border-bottom: 1px solid var(--border-secondary);
+    position: relative;
+    z-index: -3;
 }
 
 .banner_texts{
@@ -177,19 +184,22 @@ img{
     align-items: center;
     padding: 2em;
     flex-wrap: nowrap;
-    background-color: var(--bg-secondary);
+    background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(97deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(90deg, rgb(5,2,24),rgb(5,2,24));
+    
     color: var(--text-color-secondary);
     margin-bottom: 1.5em;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
-.section-summary span{
+.section-summary div{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
 
-.section-summary span i{
+.section-summary div i{
     font-size: 2em;
 }
 
@@ -200,7 +210,6 @@ img{
     font-style: oblique;
 }
 
-
 .section_text{
     margin-top: 2em;
     font-weight: 200;
@@ -209,7 +218,7 @@ img{
 
 .section_image img{
     border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /* footer */
@@ -250,33 +259,139 @@ img{
     font-size: 14px;
 }
 
-/* Media queries */
 
+/* ##### MEDIA QUERIES ##### */
 /* pc */
 @media only screen and (max-width: 992px){
-    body{
-        background-color: rgb(16, 4, 243);
-    }
+     
 }
 
 /* tablet */
 @media only screen and (max-width: 768px){
-    body{
-        background-color: rgb(15, 205, 69);
+  
+    .features{
+        align-items: stretch;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    picture.footer_logo{
+        width: 100%;
     }
 }
 
 /* celular */
 @media only screen and (max-width: 576px){
-    body{
-        background-color: rgb(205, 15, 34);
-    }
-
-    .navbar_toggle{   
+   
+    .navbar_toggle{
+        
         display: block;
     }
 
-    .navbar_menu, .navbar_buttons{
+    .container_menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--bg-secondary);
+        top: 0px;
+        
+        width: 100vw;
+        min-height: 100vh;
+        z-index: 100;
+        color: var(--text-color-secondary);
+        font-size: 1rem;
+        overflow-y: auto;
+        left: -110%;
+        transition: left 1s ease-out;
+        gap: 20px;
+    }
+
+    .container_menu ul{
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--bg-secondary);
+        width: 100vw;
+        z-index: 101;
+        color: var(--text-color-secondary);
+        font-size: 1rem;
+    }
+
+    .container_menu .navbar_buttons_responsive{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 2em;
+    }
+
+    .navbar_buttons_responsive a{
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--border-primary);
+        color: var(--text-color-secondary);
+        margin-bottom: 20px;
+    }
+
+    .navbar_buttons_responsive i{
+        margin-right: 10px;
+    }
+
+    .navbar_buttons{
         display: none;
-    } 
+    }
+
+    .header{
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .toggle_visible{
+        left: -10%;
+    }
+
+    .nav_menu-visible{
+        left: -25%;
+    }
+
+   .banner h1{
+    margin-top: 2.5em;
+   }
+
+    .features span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    picture.section_image{
+        display: none;
+    }
+
+    .section{
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid var(--border-secondary);
+        border-radius: 5px;
+        margin: 2em;
+    }
+
+    div.footer_logo{
+        width: 100%;
+    }
+
+    .footer_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .footer_map, .footer_contact{
+        align-self: baseline;
+    }
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon/apple-touch-icon.png" type="image/x-icon">
 
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +28,7 @@
     <header class="header">
         <nav class="navbar container">
             <div class="navbar_brand">
-                <a class="" href="./index.html">
-                    <h1>Clínica Vital</i></h1>
-                </a>
+                <a class="" href="./index.html">Clínica Vital</a>
             </div>
 
             <!-- menu responsive -->
@@ -38,35 +36,39 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a class="navbar_link" href="">INICIO</a>
-                </li>
-                <li class="navbar_item">
-                    <a class="navbar_link" href="">DETALLES</a>
-                </li>
-                <li class="navbar_item">
-                    <a class="navbar_link" href="">NOSOTROS</a>
-                </li>
-                <li class="navbar_item">
-                    <a class="navbar_link" href="">CONTACTO</a>
-                </li>
+            <div class="container_menu">
+                <ul class="navbar_menu ">
+                    <li class="navbar_item active">
+                        <a class="navbar_link " href="./index.html">INICIO</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a class="navbar_link" href="#">DETALLES</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a class="navbar_link" href="./pages/about.html">NOSOTROS</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a class="navbar_link" href="/pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
 
                 <div class="navbar_buttons_responsive">
-                    <button class="navbar_button">Registrarse</button>
-
-                    <button class="navbar_button button_login">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
+                    <a href="#" class="navbar_button">Registrarse</a>
+                
+                    <a href="./pages/login.html" class="navbar_button button_login">
+                        <i class="fa-solid fa-user"></i> Login
+                    </a>
                 </div>
-            </ul>
-
+            </div>
+            
             <div class="navbar_buttons">
-                <button class="navbar_button">Registrarse</button>
-
-                <button class="navbar_button button_login">
+                <a href="#" class="navbar_button">
+                    Registrarse
+                </a>
+                
+                <a href="./pages/login.html" class="navbar_button button_login">
                     <i class="fa-solid fa-user"></i> Login
-                </button>
+                </a>
             </div>
         </nav>
     </header>
@@ -94,69 +96,65 @@
             </div>
         </section>
 
-        <section class="section-summary container ">
-            <span>
-                <i class="fa-solid fa-calendar-plus"></i>
+        <div class="section-summary container">
+            <div>
+                <i class="fa-solid fa-calendar-plus"></i> 
                 <p>+20 Años de Experiencia</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i> 
                 <p>+5000 Pacientes Atendidos</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-doctor"></i> 
                 <p>+30 Profesionales Médicos</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-briefcase-medical"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase-medical"></i> 
                 <p>+15 Especialidades Médicas</p>
-            </span>
-        </section>
+            </div>
+        </div>
 
         <section class="section container">
-            <article class="section_texts">
-                <h2 class="section_title">Descubre lo Mejor en Atención Médica</h3>
+            <div class="section_texts">
+                <h2 class="section_title">Descubre lo Mejor en Atención Médica</h2>
                 <p class="section_text">
                     En nuestra clínica, te ofrecemos una atención excepcional en cada consulta. Desde la reserva de
                     tu turno hasta la atención médica personalizada, nuestro sistema de turnos en línea garantiza
                     que accedas a la atención que necesitas de manera rápida y sencilla.
                 </p>
-            </article>
+            </div>
 
             <picture class="section_image">
-                <img src="./assets/img/sec-1.jpg" alt="">
+                <img src="./assets/img/sec-1.jpg" alt="Descripcion de la seccion atencion medica">
             </picture>
         </section>
 
         <section class="section container">
             <picture class="section_image">
-                <img src="./assets/img/sec-2.png" alt="">
+                <img src="./assets/img/sec-2.png" alt="Descripcion de la seccion area de especialización">
             </picture>
 
-            <article class="section_texts">
-                <h2 class="section_title">Descubre Nuestras Áreas de Especialización</h3>
+            <div class="section_texts">
+                <h2 class="section_title">Descubre Nuestras Áreas de Especialización</h2>
                 <p class="section_text">
-                    Ofrecemos un conjunto completo de servicios especializados para atender tus necesidades de salud
-                    más específicas.
-                    Explora nuestras áreas de especialización a continuación y descubre cómo podemos ayudarte a
-                    alcanzar una salud óptima y bienestar integral.
+                    Ofrecemos un conjunto completo de servicios especializados para atender tus necesidades de salud más específicas. 
+                    Explora nuestras áreas de especialización a continuación y descubre cómo podemos ayudarte a alcanzar una salud óptima y bienestar integral.
                 </p>
-            </article>
+            </div>
         </section>
 
         <section class="section container">
-            <article class="section_texts">
-                <h2 class="section_title">Conoce a Nuestro Equipo Médico</h3>
+            <div class="section_texts">
+                <h2 class="section_title">Conoce a Nuestro Equipo Médico</h2>
                 <p class="section_text">
-                    Nuestro equipo está formado por médicos altamente capacitados y especializados, comprometidos
-                    con tu bienestar y cuidado.
-                    Desde médicos generales hasta especialistas en diversas áreas, cada miembro de nuestro equipo
-                    está dedicado a brindarte la mejor atención posible.
+                    Nuestro equipo está formado por médicos altamente capacitados y especializados, comprometidos con tu bienestar y cuidado.
+                    Desde médicos generales hasta especialistas en diversas áreas, cada miembro de nuestro equipo está dedicado a brindarte la mejor atención posible. 
                 </p>
-            </article>
+            </div>
 
             <picture class="section_image">
-                <img src="./assets/img/sec-3.jpg" alt="">
+                <img src="./assets/img/sec-3.jpg" alt="Descripcion de la seccion equipo medico">
             </picture>
         </section>
     </main>
@@ -164,20 +162,18 @@
     <!-- contenido footer -->
     <footer class="footer">
         <div class="footer_content">
-
-            <picture class="footer_logo">
-                <img src="./assets/img/logo_footer/favicon_io (2)/android-chrome-192x192.png" alt="">
-
+            <div class="footer_logo">
+                <img src="./assets/img/logo_footer/logo-footer.png" alt="Logo Clinica Vital">
                 <p>Clínica Vital</p>
-            </picture>
+            </div>
 
             <div class="footer_map">
                 <h3>Mapa del sitio</h3>
                 <ul class="footer_items">
-                    <li class="footer_item"><a class="footer_link" href="">Inicio</a></li>
-                    <li class="footer_item"><a class="footer_link" href="">Detalles</a></li>
-                    <li class="footer_item"><a class="footer_link" href="">Nosotros</a></li>
-                    <li class="footer_item"><a class="footer_link" href="">Contacto</a></li>
+                    <li class="footer_item"><a class="footer_link" href="./index.html">Inicio</a></li>
+                    <li class="footer_item"><a class="footer_link" href="#">Detalles</a></li>
+                    <li class="footer_item"><a class="footer_link" href="./pages/about.html">Nosotros</a></li>
+                    <li class="footer_item"><a class="footer_link" href="./pages/contact.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -185,28 +181,19 @@
                 <h3>Contacto</h3>
                 <ul class="footer_items">
                     <li class="footer_item">
-
-                        <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
-
+                            <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
                     </li>
                     <li class="footer_item">
-
-                        <i class="fa-solid fa-phone"></i> (05326) 433056
-
+                            <i class="fa-solid fa-phone"></i> (05326) 433056
                     </li>
                     <li class="footer_item">
-
-                        <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
-
+                            <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
                     </li>
                     <li class="footer_item">
-
-                        <i class="fa-solid fa-envelope"></i> info@clinicavital.com.ar
-
+                        <i class="fa-solid fa-envelope"></i> info@clinica.com.ar
                     </li>
                 </ul>
             </div>
-
         </div>
 
         <p class="footer_copy text-center">Copyright © 2024 Clínica Vital. All rights reserved.</p>
@@ -214,5 +201,4 @@
 
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
