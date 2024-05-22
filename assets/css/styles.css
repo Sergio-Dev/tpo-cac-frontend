@@ -118,7 +118,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 4.2em);background-image: url("/assets/img/banner-4.jpg");
+    min-height: calc(100vh - 4.2em);
+    background: url('/assets/img/banner-1.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
