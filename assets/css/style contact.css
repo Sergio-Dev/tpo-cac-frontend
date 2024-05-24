@@ -122,9 +122,9 @@ section {
 }
 
 .tarjeta-contacto {
-    height: 80vh;
+    height: 90vh;
     width: 1000px;
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -229,7 +229,7 @@ select {
     border: #fff
 }
 
-#radiobutton {
+.radiobutton-card input {
     appearance: none;
     border-radius: 50%;
     position: relative;
@@ -243,7 +243,7 @@ select {
     margin-right: 5px
 }
 
-#radiobutton:checked {
+.radiobutton-card input:checked {
     border: 5px solid #000
 }
 
@@ -264,7 +264,7 @@ textarea {
     width: 100%;
     background-color: #f7f7f7;
     border-radius: 1px;
-    height: 70px;
+    height: 100px;
     resize: vertical;
     border-color: #f7f7f7
 }

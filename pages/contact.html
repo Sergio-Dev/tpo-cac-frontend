@@ -1,80 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/favicon/apple-touch-icon.png" type="image/x-icon">
-
-    <!-- fuentes -->
+    <link rel="icon" href="../assets/img/calendar-check-regular.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
-    <!-- iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- estilos css -->
-    <link rel="stylesheet" href="../assets/css/style-contact.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Contacto</title>
+    <script src="../assets/js/contacto.js" defer></script>
 </head>
-
-<body>
-
-    <!-- contenido header -->
+<body> 
     <header class="header">
         <nav class="navbar container">
             <div class="navbar_brand">
-                <a class="" href="../index.html">Clínica Vital</a>
+                <a class="" href="./index.html">
+                    <h1>Logo</h1>
+                </a>
             </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a class="navbar_link" href="../index.html">INICIO</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./pages/">DETALLES</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./about.html">NOSOTROS</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./contact.html">CONTACTO</a>
+                </li>
+            </ul>
 
-            <!-- menu responsive -->
-            <button class="navbar_toggle ">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <div class="container_menu">
-                <ul class="navbar_menu ">
-                    <li class="navbar_item active">
-                        <a class="navbar_link " href="../index.html">INICIO</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a class="navbar_link" href="#">DETALLES</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a class="navbar_link" href="../pages/about.html">NOSOTROS</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a class="navbar_link" href="../pages/contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-
-                <div class="navbar_buttons_responsive">
-                    <a href="#" class="navbar_button">Registrarse</a>
-                
-                    <a href="../pages/login.html" class="navbar_button button_login">
-                        <i class="fa-solid fa-user"></i> Login
-                    </a>
-                </div>
-            </div>
-            
             <div class="navbar_buttons">
-                <a href="#" class="navbar_button">
-                    Registrarse
-                </a>
-                
-                <a href="../pages/login.html" class="navbar_button button_login">
-                    <i class="fa-solid fa-user"></i> Login
-                </a>
+                <button class="navbar_button">Registrarse</button>
+                <button class="navbar_button button_login">
+                    <span class="ph--user-bold"></span>Login
+                </button>
             </div>
         </nav>
     </header>
-    <!-- contenido main 1-->
     <main>
         <section>
             <div class="tarjeta-contacto" id="contacto">
@@ -85,102 +54,101 @@
                     </div>
                     <div class="titulo-intro">
                         <i class="fa-solid fa-envelope"></i>
-                        <span>Clinica.Vital@gmail.com</span><br>
+                        <span>info@clinicavital.com.ar</span><br>
                         <i class="fa-solid fa-phone"></i>
-                        <span>Tel: 4513 - 9280</span><br>
+                        <span>Tel: (05326) 433056</span><br>
                         <i class="fa-solid fa-location-pin"></i>
-                        <span>Av. Rivadavia 12344</span>
+                        <span>Calle 47 e/11 y 12 - La Plata</span>
                     </div>
                     <div class="titulo-intro">
                         <h3>Redes</h3>
                         <i class="fa-brands fa-instagram"></i>
                         <a href="Instagram">Instagram</a><br>
                         <i class="fa-brands fa-facebook"></i>
-                        <a href="Facebook">Facebook</a>
+                        <a href="Facebook">Facebook</a><br>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="Whatsapp">+54 9 111 222 3333</a>
                     </div>
                 </div>
-                <form class="form-contacto" action="form-contacto">
+                <form class="form-contacto" id="contactForm">
                     <div class="msj-contacto">
                         <div class="cont-campo">
                             <label for="nombre">Nombre:</label>
                             <input type="text" id="nombre" required>
                         </div>
                         <div class="cont-campo">
-                            <label for="nombre">Email:</label>
-                            <input type="text" id="nombre" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
                         </div>
                         <div class="cont-campo">
-                            <label for="nombre">Especialidad:</label>
-                            <select name="especialidades" id="especialidades">
-                                <option value="Seleccione">Seleccione especialidad</option>
-                                <option value="Especialidad">Especialidad 1</option>
-                                <option value="Especialidad">Especialidad 2</option>
-                                <option value="Especialidad">Especialidad 3</option>
-                                <option value="Especialidad">Especialidad 4</option>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" id="telefono" required>
+                        </div>
+                        <div class="cont-campo">
+                            <label for="especialidades">Especialidad:</label>
+                            <select name="especialidades" id="especialidades" required>
+                                <option value="" disabled selected>Seleccione especialidad</option>
+                                <option value="Especialidad 1">Especialidad 1</option>
+                                <option value="Especialidad 2">Especialidad 2</option>
+                                <option value="Especialidad 3">Especialidad 3</option>
+                                <option value="Especialidad 4">Especialidad 4</option>
                             </select>
                         </div>
                         <div class="radiobutton-card">
                             <div>
-                            <label>Paciente <input type="radio" id="radiobutton" name="drone" value="Paciente" checked /></label> 
-                            </div>                           
-                            <div>
-                            <label>Familiar <input type="radio" id="radiobutton" name="drone" value="familiar" /></label>
+                                <label>Paciente<input type="radio" id="Paciente" name="drone" value="Paciente" required /></label>
                             </div>
                             <div>
-                            <label>Otro <input type="radio" id="radiobutton" name="drone" value="Otro" /></label>
+                                <label>Familiar<input type="radio" id="Familiar" name="drone" value="Familiar" required /></label>
+                            </div>
+                            <div>
+                                <label>Otro<input type="radio" id="Otro" name="drone" value="Otro" required /></label>
                             </div>
                         </div>
                         <div class="cont-msj">
                             <label for="Mensaje">Mensaje</label>
-                            <textarea name="Mensaje" id="Mensaje" autocomplete="on"></textarea>
-                            <button class="boton">Submit</button>
+                            <textarea name="Mensaje" id="mensaje" autocomplete="on" required></textarea>
+                            <button class="boton" id="enviar" type="button">Submit</button>
                         </div>
                     </div>
                 </form>
             </div>
         </section>
     </main>
-
-<!-- contenido footer -->
     <footer class="footer">
         <div class="footer_content">
-            <div class="footer_logo">
-                <img src="../assets/img/logo_footer/logo-footer.png" alt="Logo Clinica Vital">
+            <picture class="footer_logo">
+                <img src="./assets/img/logo_footer/favicon_io (2)/android-chrome-192x192.png" alt="">
                 <p>Clínica Vital</p>
-            </div>
-
+            </picture>
             <div class="footer_map">
                 <h3>Mapa del sitio</h3>
                 <ul class="footer_items">
-                    <li class="footer_item"><a class="footer_link" href="../index.html">Inicio</a></li>
-                    <li class="footer_item"><a class="footer_link" href="#">Detalles</a></li>
-                    <li class="footer_item"><a class="footer_link" href="../pages/about.html">Nosotros</a></li>
-                    <li class="footer_item"><a class="footer_link" href="../pages/contact.html">Contacto</a></li>
+                    <li class="footer_item"><a class="footer_link" href="">Inicio</a></li>
+                    <li class="footer_item"><a class="footer_link" href="">Detalles</a></li>
+                    <li class="footer_item"><a class="footer_link" href="">Nosotros</a></li>
+                    <li class="footer_item"><a class="footer_link" href="">Contacto</a></li>
                 </ul>
             </div>
-
             <div class="footer_contact">
                 <h3>Contacto</h3>
                 <ul class="footer_items">
                     <li class="footer_item">
-                            <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
+                        <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
                     </li>
                     <li class="footer_item">
-                            <i class="fa-solid fa-phone"></i> (05326) 433056
+                        <i class="fa-solid fa-phone"></i> (05326) 433056
                     </li>
                     <li class="footer_item">
-                            <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
+                        <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
                     </li>
                     <li class="footer_item">
-                        <i class="fa-solid fa-envelope"></i> info@clinica.com.ar
+                        <i class="fa-solid fa-envelope"></i> info@clinicavital.com.ar
                     </li>
                 </ul>
             </div>
         </div>
-
         <p class="footer_copy text-center">Copyright © 2024 Clínica Vital. All rights reserved.</p>
     </footer>
-
-    <script src="../assets/js/main.js"></script>
 </body>
 </html>
