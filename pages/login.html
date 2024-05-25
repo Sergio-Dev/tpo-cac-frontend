@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- estilos css -->
-    <link rel="stylesheet" href="../assets/css/style-login.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    
+
     <title>Login</title>
 </head>
 
@@ -56,34 +55,34 @@
 
                 <div class="navbar_buttons_responsive">
                     <a href="#" class="navbar_button">Registrarse</a>
-                
+
                     <a href="../pages/login.html" class="navbar_button button_login">
                         <i class="fa-solid fa-user"></i> Login
                     </a>
                 </div>
             </div>
-            
+
             <div class="navbar_buttons">
                 <a href="#" class="navbar_button">
                     Registrarse
                 </a>
-                
+
                 <a href="../pages/login.html" class="navbar_button button_login">
                     <i class="fa-solid fa-user"></i> Login
                 </a>
             </div>
         </nav>
     </header>
-    
+
     <!-- contenido main 1-->
     <main>
         <section>
             <div class="tarjeta-login" id="contacto">
                 <div class="intro-contacto">
                     <div class="titulo-intro">
-                        <h1>Inicia Sesión</h1>
+                        <h1 class="text-center">Inicia Sesión</h1>
                     </div>
-                    <form class="form-contacto" action="form-contacto">
+                    <form class="form-contacto" id="form-submit" action="form-contacto">
                         <div class="msj-contacto">
                             <div class="cont-campo">
                                 <label for="nombre">Mail:</label>
@@ -91,13 +90,13 @@
                             </div>
                             <div class="cont-campo">
                                 <label for="nombre">Contraseña:</label>
-                                <input type="text" id="nombre">
+                                <input type="text" id="pass">
                             </div>
                             <div class="cont-msj">
                                 <button class="boton">Ingresar</button>
                             </div><br>
                             <div class="cont-msj">
-                            <a>Registrarse</a>
+                                <a class="link-registro" href="../pages/contact.html">Registrarse</a>
                             </div>
                         </div>
                     </form>
@@ -128,13 +127,13 @@
                 <h3>Contacto</h3>
                 <ul class="footer_items">
                     <li class="footer_item">
-                            <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
+                        <i class="fa-solid fa-location-dot"></i> Calle 47 e/11 y 12 - La Plata
                     </li>
                     <li class="footer_item">
-                            <i class="fa-solid fa-phone"></i> (05326) 433056
+                        <i class="fa-solid fa-phone"></i> (05326) 433056
                     </li>
                     <li class="footer_item">
-                            <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
+                        <i class="fa-brands fa-whatsapp"></i> +54 9 111 222 3333
                     </li>
                     <li class="footer_item">
                         <i class="fa-solid fa-envelope"></i> info@clinica.com.ar
@@ -146,6 +145,7 @@
         <p class="footer_copy text-center">Copyright © 2024 Clínica Vital. All rights reserved.</p>
     </footer>
 
+    <script src="../assets/js/login.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>

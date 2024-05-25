@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* reset CSS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -17,7 +18,6 @@
     --text-color-secondary: #ffffff;
     --btn-color-primary: #050218;
     --btn-color-secondary: #050218;
-
     --border-primary: white;
     --border-secondary: #050218;
 }
@@ -46,12 +46,11 @@ img{
 }
 
 /* ##### PAGINA INICIO #####*/
-/* header */
 .header {
     background-color: var(--bg-primary);
     padding: 1em;
     color: var(--text-color-primary);
-    border-bottom: 1px solid var(--btn-color-primary);
+    border-bottom: 2px solid var(--btn-color-primary);
 }
 
 .navbar {
@@ -81,7 +80,6 @@ img{
     font-size: 14px;
     gap: 25px;
     font-weight: 500;
-    
     flex-wrap: wrap;
 }
 
@@ -113,7 +111,6 @@ img{
     color: var(--text-color-secondary);
 }
 
-/* banner */
 .banner{
     display: flex;
     justify-content: center;
@@ -170,7 +167,6 @@ img{
     margin-right: 5px;
 }
 
-/* section */
 .section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -273,13 +269,16 @@ img{
 .valores .valores_titulo,
 .profesionales .profesionales_titulo{
     font-size: 2.5rem;
-    font-weight: 600;
+    color: var(--text-color-primary);
+    font-size: 38px;
+    font-weight: 300;
+    font-style: oblique;
+    margin-top: 1em;
 }
 
 .nosotros .nosotros_texto{
-    font-style: oblique;
     font-weight: 200;
-    font-size: 1.1rem;
+    color: var(--text-color-primary);
 }
 
 .mision-vision{
@@ -298,7 +297,7 @@ img{
 .vision .vision_texto{
     font-size: 1rem;
     font-weight: 200;
-    font-style: oblique;
+    color: var(--text-color-primary);
 }
 
 .valores h2{
@@ -311,15 +310,8 @@ img{
     padding: 2em;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 6px 0px;
-    background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(97deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(90deg, rgb(5,2,24),rgb(5,2,24));
+    background-color: transparent;
     color: var(--text-color-secondary);
-}
-
-.valores .valor:hover{
-    background-image: var(--bg-primary);
-    color: var(--tex5t-color-primary);
-    transition: all 1s ease-out;
-
 }
 
 .valores{
@@ -334,6 +326,8 @@ img{
 .profesionales_cards{
     display: flex;
     gap: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 .card{
@@ -342,32 +336,263 @@ img{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.card h3, .mision-vision h3{
+    color: var(--text-color-primary);
+}
+
+.card p{
+    font-weight: 200;
+    color: var(--text-color-primary);
+}
+
+.valor{
+    position: relative;
+    z-index: 1;
+    transition: 0s 
+}
+
+.valor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(97deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(90deg, rgb(5,2,24),rgb(5,2,24));
+    border-radius: 4px;
+    z-index: -1;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition:  transform .5s ease;
+}
+
+.valor:hover::before{
+    transform-origin: right;
+    transition: transform .7s ease;
+    transform: scaleX(0);
+}
+
+.valor:hover{
+    color: var(--text-color-primary);
+}
+
+
+/* ##### PAGINA CONTACTO ##### */
+.tarjeta-contacto {
+    min-height: 90vh;
+    width: 1000px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.msj-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.cont-campo {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.cont-msj{
+    width: 100%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: poppins;
+    font-size: small;
+    color: var(--text-color-primary);
+}
+
+.contacto-section  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-contacto {
+    flex-basis: 45%;
+    padding-left: 10vw;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.form-contacto {
+    flex-basis: 45%;
+    box-sizing: border-box;
+}
+
+.intro-contacto h3 {
+    font-family: poppins;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.intro-contacto p {
+    font-family: poppins;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 15px
+}
+
+.intro-contacto span {
+    font-family: poppins;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 15px
+}
+
+.titulo-intro h1 {
+    font-family: poppins;
+    font-size: xx-large;
+    margin-bottom: 10px
+}
+
+.titulo-intro {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.titulo-intro a {
+    font-family: poppins;
+    font-size: 12px;
+    text-decoration: underline;
+    font-style: italic
+}
+
+.boton {
+    background-color: var(--bg-secondary);
+    color: var(--text-color-secondary);
+    width: 100%;
+    height: 34px;
+    font-family: poppins;
+    font-size: small;
+    margin-top: 12px;
+    transition: .4s
+}
+
+.boton:hover {
+    color: var(--text-color-primary);
+    background-color: var(--bg-primary);
+}
+
+select {
+    width: 100%;
+    height: 28px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #f7f7f7;
+    color: var(--text-color-primary);
+    font-family: poppins;
+    font-size: x-small;
+    border-color: #f7f7f7
+}
+
+.radiobutton-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: #fff
+}
+
+.radiobutton-card input {
+    appearance: none;
+    border-radius: 50%;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #4d4c4c;
+    transition: .2s all linear;
+    margin-right: 5px;
+    top: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.radiobutton-card input:checked {
+    border: 3px solid var(--bg-secondary);
+    outline: none;
+}
+
+input {
+    width: 100%;
+    height: 28px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #f7f7f7;
+    color: var(--text-color-primary);
+    font-family: poppins;
+    font-size: x-small;
+    border-color: #f7f7f7;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    background-color: #f7f7f7;
+    border-radius: 1px;
+    height: 100px;
+    resize: vertical;
+    border-color: #f7f7f7;
+    padding: 5px 10px;
+    color: var(--text-color-primary);
+}
+
+input:focus,
+textarea:focus{
+    outline: solid 1px var(--border-secondary);
+}
+
+
+/* ##### PAGINA LOGIN ##### */
+.tarjeta-login {
+    min-height: 80vh;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.tarjeta-login .intro-contacto {
+    padding: 0 50px;
+}
+
+.link-registro{
+    display: block;
+    font-size: small;
+    text-decoration: underline;
+}
+
+.titulo-intro{
+    color: var(--text-color-primary);
+}
+
 
 /* ##### MEDIA QUERIES ##### */
-/* pc */
-@media only screen and (max-width: 992px){
-     
-}
-
-/* tablet */
-@media only screen and (max-width: 768px){
-  
-    .features{
-        align-items: stretch;
-        width: 100%;
-        margin-bottom: 2em;
-    }
-
-    picture.footer_logo{
-        width: 100%;
-    }
-}
-
 /* celular */
 @media only screen and (max-width: 576px){
    
     .navbar_toggle{
-        
         display: block;
     }
 
@@ -377,10 +602,8 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         background-color: var(--bg-secondary);
         top: 0px;
-        
         width: 100vw;
         min-height: 100vh;
         z-index: 100;
@@ -438,9 +661,19 @@ img{
         left: -25%;
     }
 
-   .banner h1{
-    margin-top: 2.5em;
-   }
+   .banner .banner_texts h1{
+        margin-top: 6rem;
+        font-size: 2.7rem;
+    }
+
+    .banner .banner_texts p{
+        font-size: 1rem;
+    }
+
+    .features{
+        align-items: stretch;
+        width: 100%;
+    }
 
     .features span{
         display: flex;
@@ -463,6 +696,10 @@ img{
         margin: 2em;
     }
 
+    .section .section_texts .section_title{
+       font-size: 2em;
+    }
+
     div.footer_logo{
         width: 100%;
     }
@@ -476,5 +713,86 @@ img{
 
     .footer_map, .footer_contact{
         align-self: baseline;
+    }
+
+    .nosotros_titulo{
+        padding-top: 1em;
+    }
+
+    .tarjeta-login .intro-contacto {
+        padding: 0;
+        flex-basis: 75%;
+    }
+
+    .tarjeta-contacto {
+        flex-direction: column;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 578px) and (max-width: 768px){
+    
+    .navbar_menu{
+        gap: 15px;
+    }
+
+    .banner .banner_texts h1{
+        font-size: 2.6em;
+    }
+
+    .banner .banner_texts p{
+        font-size: 1.2rem;
+        letter-spacing: 1.2px;
+    }
+
+    .features{
+        align-items: stretch;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .features span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    picture.footer_logo{
+        width: 100%;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+    .banner .banner_texts p{
+        font-size: 1.1rem;
+        letter-spacing: 1.1px;
+    }
+
+    .features{
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .features span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .feature i{
+        font-size: 1.5rem;
     }
 }
